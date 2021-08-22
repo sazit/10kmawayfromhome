@@ -1,0 +1,53 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+<style>
+    .shade {
+        background-color: aqua;
+    }
+
+    .body-container {
+        /*remove the container default padding attribute*/
+        padding-left: 0px !important;
+        padding-right: 0px !important;
+        /*increase width as per your need*/
+        max-width: 100%;
+    }
+
+
+    #container2 {
+        height: 400px;
+        width: 400px;
+        position: relative;
+    }
+
+    #image {
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+
+    .imageContainer {
+        background-image: url('~/images/mainbg.png');
+    }
+
+    #text {
+        z-index: 100;
+        position: absolute;
+        color: white;
+        font-size: 24px;
+        font-weight: bold;
+        left: 150px;
+        top: 350px;
+    }
+</style>
+
+<img src="~/images/mainbg.png" width="100%" height="100%" />
+<!--
+    <h1 style="position:absolute;"> Find you 10km from home</h1>
+
+    <div class="imageContainer">Some Text</div>
+
+    -->
